@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+input {
+  font-size: 2em;
+  margin: 2em;
+  padding: 0.5em;
+  border: 2px solid darkgrey;
+  border-radius: 0.2em;
+  min-width: 12em;
+  max-width: 14em;
+  width: 80%;
+  text-align: center;
+  color:  slategrey;
+  flex: 1;
+}
+input::placeholder {
+  color:  darkslategrey;
+}
+    </style>
+  </head>
+  <body>
+    <input type="tel" id="phone" placeholder="телефон" />
+  </body>
+  <script src="phone.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const input = document.querySelector("input");
+      input.value = '';
+      input.focus();
+    });
+  </script>
+</html>
