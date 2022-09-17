@@ -15,6 +15,8 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
+  flex-direction: column;
+  color: slategrey;
 }
 input {
   font-size: 2em;
@@ -28,6 +30,7 @@ input {
   text-align: center;
   color:  slategrey;
   flex: 1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0em 0.3em 1em;
 }
 input::placeholder {
   color:  darkslategrey;
@@ -36,6 +39,8 @@ input::placeholder {
   </head>
   <body>
     <input type="tel" id="phone" placeholder="телефон" />
+    <p>Это демо маски ввода телефона, вдохновлённое каналом Диджатилизируй,</p>
+    <p>но сделанное несколько иначе</p>
   </body>
   <script src="phone.js"></script>
   <script>
